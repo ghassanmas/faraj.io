@@ -2,7 +2,7 @@
 title: الصفحة الرئيسسة
 description: مصدركم الاطلاع على امكانيات التواصل الامن 
 lang: ar
-layout: layouts/post.njk
+layout: layouts/home.njk
 ---
 
 ## حول المبادرة

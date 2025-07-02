@@ -3,7 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 
 ---
-<h1 class="inline">{{ title }}</h1> <p class="inline">{% if page.url | isArabic %} <a href={{ i18n.pageEn }}> English </a>{% else %} <a href={{ i18n.pageAr }}> العربية </a> {% endif %}</p> 
+<h1>{{ title }}</h1>  
 <div class="post_head">
 {% if page.url | isArabic %}
 <span>تم النشر في:</span><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate('ar') }}</time>,

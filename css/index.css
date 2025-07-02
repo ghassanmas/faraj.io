@@ -135,6 +135,7 @@ header {
     border-bottom: 1px dashed var(--lightgray);
     max-width: 750px;
     margin: auto;
+    display: flex;
 
 }
 

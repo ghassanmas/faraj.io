@@ -1,6 +1,6 @@
 {% set finaltitle %}{{title }} | {{ titleBase }}{% endset %}
 <!doctype html>
-<html lang="{{ lang or metadata.lang }}" dir="{% if lang =="ar" %}rtl{% else %}ltf{% endif %}">
+<html lang="{{ lang or metadata.lang }}" dir="{% if lang =="ar" %}rtl{% else %}ltr{% endif %}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,12 +34,15 @@
   <body>
     <header>
       <h1 class="home"><a href="/{{ metadata.lang | url }}/">{{ metadata.title }}</a></h1>
-
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="nav">
       {%- for entry in collections.all | eleventyNavigation %}
       {%- endfor %}
       </ul>
+      <p class="home" >{% if page.url | isArabic %} <a href={{ i18n.pageEn }}> English </a>{% else %} <a href={{ i18n.pageAr }}> العربية </a> {% endif %}</p>
+
+      <div>
+      </div>
     </header>
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
