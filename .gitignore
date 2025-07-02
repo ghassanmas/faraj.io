@@ -1,0 +1,14 @@
+_site/
+node_modules/
+.DS_Sotre
+.DS_Store
+.firebase
+.vscode
+
+faraj/.obsidian
+posts/
+img/gpg-public-key.png
+
+css/index_2.css
+_includes/layouts/base_backup.njk
+local

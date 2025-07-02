@@ -1,0 +1,24 @@
+{
+    "title": "The Faraj Initiative",
+    "url": "https://faraj.io/",
+    "language": "en",
+    "gitRepo":"https://github.com/ghassanmas/faraj.io",
+    "description": "The Faraj Initiative is an initiative to provide resources and guidance for secure communication.",
+    "img": "https://faraj.io/img/default1.png",
+    "feed": {
+        "subtitle": "The Faraj Initiative is an initiative to provide resources and guidance for secure communication.",
+        "filename": "feed.xml",
+        "path": "/feed/feed.xml",
+        "id": "https://faraj.io/"
+    },
+    "jsonfeed": {
+        "path": "/feed/feed.json",
+        "url": "https://faraj.io/feed/feed.json"
+    },
+    "author": {
+        "name": "Ghassan Maslamani",
+        "email": "ghassan.maslamani@gmail.com",
+        "url": "https://faraj.io/"
+    },
+    "lang": "en"
+}

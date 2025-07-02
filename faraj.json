@@ -1,0 +1,6 @@
+{
+    "date": "Created",
+    "layout":"layouts/post.njk",
+    "tags": ["posts"]
+
+}

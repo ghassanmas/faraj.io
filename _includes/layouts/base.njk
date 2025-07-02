@@ -1,0 +1,67 @@
+{% set finaltitle %}{{title }} | {{ titleBase }}{% endset %}
+<!doctype html>
+<html lang="{{ lang or metadata.lang }}" dir="{% if lang =="ar" %}rtl{% else %}ltf{% endif %}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ finaltitle }}</title>
+    <link rel="canonical" href="https://faraj.io{{ page.url }}">
+    
+    <link rel="alternate" hreflang="en" href="https://fara.io{{ i18n.pageEn }}" />
+    <link rel="alternate" hreflang="ar" href="https://fara.io{{ i18n.pageAr }}" />
+    <meta name="LANGUAGE" content="{{lang}}" />
+
+    <meta name="description" content="{{ description or metadata.description }}">
+    <meta name="twitter:image" content="{{ img or metadata.img | url }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ghassanmas" />
+    <meta name="twitter:title" content="{{ finaltitle }}" />
+    <meta name="twitter:description" content="{{ description or metadata.description }}" />
+    <script defer data-domain="faraj.io" src="https://analytics.zaat.dev/js/plausible.js"></script>
+
+  <meta property="og:title" content="{{ finaltitle }}" />
+  <meta property="og:description" content="{{ description or metadata.description }}"  />
+  <meta property="og:image" content="{{ img or metadata.img | url }}" />
+
+    
+    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+    <link rel='shortcut icon' type='image/x-icon' href='/img/favicon.ico' />
+
+  </head>
+  <body>
+    <header>
+      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+
+      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+      <ul class="nav">
+      {%- for entry in collections.all | eleventyNavigation %}
+      {%- endfor %}
+      </ul>
+    </header>
+
+    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+      {{ content | safe }}
+    </main>
+  {% if page.url | isArabic %}
+  
+      <footer {% if footer == 'skip'  %} class="below"  {% endif %}>
+  <p> © <time datetime="{{ buildInfo.buildTime | htmlDateString }}">2025</time> غسان مسلماني, تم بناء الموقع باستخدام <a href="https://github.com/11ty/eleventy-base-blog/">base-blog</a> starter project | <a href='/privacy/'> سياسة الخضوصية,</a> | <a href='/feed/feed.xml'> RSS ملخص</a> | <a href="/faraj/ar/imprint">معلومات قانونية</a></p> 
+  <p>مصدر جت git <a href={{ metadata.gitRepo }}> faraj.io</a> هاش جت لاخر تعديل <a  href={{ metadata.gitRepo }}/commit/{{ buildInfo.hash }}>{{ buildInfo.hash }}</a>, <span>تم بناء الموقع في: </span><time datetime="{{ buildInfo.buildTime | htmlDateString }}">{{ buildInfo.buildTime | readableDate('ar') }}</time></p>
+<p xmlns:cc="http://creativecommons.org/ns#" >العمل (المحتوى) متاح تحت رخصة<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ar" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""> <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""> <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/ca.svg?ref=chooser-v1" alt=""> </a>, الا اذا تم نحديد غير ذالك</p>
+<p> العمل البرمجي متاح تحت رخصة  <a href={{ metadata.gitRepo }}/blob/{{ buildInfo.hash }}/LICENSE>MIT License</a> </p>
+    </footer>
+
+  {% else %}
+    <footer {% if footer == 'skip'  %} class=""  {% endif %}>
+  <p> © <time datetime="{{ buildInfo.buildTime | htmlDateString }}">2025</time> Ghassan Maslamani. Made with 11ty using the <a href="https://github.com/11ty/eleventy-base-blog/">base-blog</a> starter project. <a href='/privacy/'> Privacy Policy</a> | <a href='/feed/feed.xml'> RSS Feed </a>| <a href="/faraj/en/imprint">Imprint</a>  </p>
+  <p>Git Source: <a href={{ metadata.gitRepo }}> faraj.io</a> commit hash: <a  href={{ metadata.gitRepo }}/commit/{{ buildInfo.hash }}>{{ buildInfo.hash }}</a>, <span>Site built on: </span><time datetime="{{ buildInfo.buildTime | htmlDateString }}">{{ buildInfo.buildTime | readableDate }}</time></p>
+<p xmlns:cc="http://creativecommons.org/ns#" >The work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""> <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""> <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/ca.svg?ref=chooser-v1" alt=""> </a>, unless oterwise stated</p>
+<p> The code is licensed under  <a href={{ metadata.gitRepo }}/blob/{{ buildInfo.hash }}/LICENSE>MIT License</a> </p>
+    </footer>
+{% endif %}
+    <!-- Current page: {{ page.url | url }} -->
+  </body>
+</html>
