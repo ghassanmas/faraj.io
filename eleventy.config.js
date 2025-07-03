@@ -4,6 +4,7 @@ import { DateTime } from "luxon";
 
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import  DateGitLastUpdated  from "./node_modules/@11ty/eleventy/src/Util/DateGitLastUpdated.js"
 
 export default async function(eleventyConfig) {
 
@@ -41,9 +42,13 @@ eleventyConfig.addFilter("isArabic", function(path){
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
     });
 
-    eleventyConfig.addAsyncFilter('getFileLastMoified',   function(path){
-        const stats  = fs.statSync(path);
+    eleventyConfig.addAsyncFilter('getFileLastMoified',  async function(path){
+          const  lastMod = await  DateGitLastUpdated(path);
+     return lastMod;
+
+        /*const stats  = fs.statSync(path);
              return new Date(stats.mtime)
+    */
     })
 
 
@@ -51,7 +56,7 @@ eleventyConfig.addFilter("isArabic", function(path){
     
         port: 8080,
         open: false,
-    notify: false,
+        notify: false,
         ui: false,
         ghostMode: false,
         showAllHosts: true
