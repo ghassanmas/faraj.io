@@ -62,7 +62,9 @@
   <p> © <time datetime="{{ buildInfo.buildTime | htmlDateString }}">2025</time> Ghassan Maslamani. Made with 11ty using the <a href="https://github.com/11ty/eleventy-base-blog/">base-blog</a> starter project. <a href='/privacy/'> Privacy Policy</a> | <a href='/feed/feed.xml'> RSS Feed </a>| <a href="/faraj/en/imprint">Imprint</a>  </p>
   <p>Git Source: <a href={{ metadata.gitRepo }}> faraj.io</a> commit hash: <a  href={{ metadata.gitRepo }}/commit/{{ buildInfo.hash }}>{{ buildInfo.hash }}</a>, <span>Site built on: </span><time datetime="{{ buildInfo.buildTime | htmlDateString }}">{{ buildInfo.buildTime | readableDate }}</time></p>
 <p xmlns:cc="http://creativecommons.org/ns#" >The work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""> <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""> <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/ca.svg?ref=chooser-v1" alt=""> </a>, unless oterwise stated</p>
+<!--
 <p> The code is licensed under  <a href={{ metadata.gitRepo }}/blob/{{ buildInfo.hash }}/LICENSE>MIT License</a> </p>
+ -->
     </footer>
 {% endif %}
     <!-- Current page: {{ page.url | url }} -->
