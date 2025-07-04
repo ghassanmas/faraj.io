@@ -62,7 +62,34 @@
 
 
 
-/* Global stylesheet */
+/* Homepage main sections */
+
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+}
+.section {
+    padding: 2%;
+    width: 100%;
+    flex: 50%;
+    box-shadow: 0 0 0 1px var(--darkgray);
+   overflow: hidden;
+   text-overflow: ellipsis;
+
+}
+.section > a > h3 {
+    display: inline;
+}
+.icon {
+    max-width: 16px;
+    max-height: 16px;
+}
+.section > a > p {
+
+
+}
+
+  /* Global stylesheet */
 
 * {
     box-sizing: border-box;

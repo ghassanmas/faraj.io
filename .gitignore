@@ -11,4 +11,4 @@ img/gpg-public-key.png
 
 css/index_2.css
 _includes/layouts/base_backup.njk
-local
+.obsidian/

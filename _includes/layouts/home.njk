@@ -2,4 +2,9 @@
 layout: layouts/base.njk
 templateClass: tmpl-home
 ---
+
 {{ content | safe }}
+
+{% set sections = metadata.mainSections %}
+{% include "mainSections.njk" %}
+

@@ -8,7 +8,11 @@ i18n: {
  metadata:{
 
  lang:(data) => (data.page.url.includes('/ar')? 'ar' : 'en'),
- title: (data) => (data.page.url.includes('/ar')? metadataAr.title : metadataEn.title)
+ title: (data) => (data.page.url.includes('/ar')? metadataAr.title : metadataEn.title),
+mainSections: (data)  => (data.page.url.includes('/ar')? metadataAr.mainSections : metadataEn.mainSections),
+switchTheme: (data)  => (data.page.url.includes('/ar')? metadataAr.switchTheme : metadataEn.switchTheme),
+description: (data) => (data.page.url.includes('/ar')? metadataAr.description : metadataEn.description)
+
 }
  
 }

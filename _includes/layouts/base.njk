@@ -17,8 +17,10 @@
     <meta name="twitter:site" content="@ghassanmas" />
     <meta name="twitter:title" content="{{ finaltitle }}" />
     <meta name="twitter:description" content="{{ description or metadata.description }}" />
+    
+    <!-- 
     <script defer data-domain="faraj.io" src="https://analytics.zaat.dev/js/plausible.js"></script>
-
+-->
   <meta property="og:title" content="{{ finaltitle }}" />
   <meta property="og:description" content="{{ description or metadata.description }}"  />
   <meta property="og:image" content="{{ img or metadata.img | url }}" />
@@ -40,7 +42,23 @@
       {%- endfor %}
       </ul>
       <p class="home" >{% if page.url | isArabic %} <a href={{ i18n.pageEn }}> English </a>{% else %} <a href={{ i18n.pageAr }}> العربية </a> {% endif %}</p>
+      <!--
+      Icon for langauge to be added styled later
 
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-languages-icon lucide-languages"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+      Ref: https://lucide.dev/icons/languages
+
+      For dark/light toggleing
+      <p class="home"><button id="theme"> {{ metadata.switchTheme }} </button> </p>
+      Well this turns out not to be an easy as it seems to be, sicne theme is based in `prefre-color-scheme` of media query of CSS
+      of which it's value cannot be changed. 
+
+      Thus to make overridable, CSS media to reflect class. or combine
+      The thing is Zach in 11ty, relies on it, unsuprisngly as no JS site. 
+      Refs:
+      -  Astro Impelemtion https://github.com/withastro/starlight/blob/9bf5b5b88ab219fe2d7b9816316dce3842f8e403/packages/starlight/components/ThemeSelect.astro#L12
+      -  Armin Implmentation: view-source:https://lucumr.pocoo.org/ 
+      -->
       <div>
       </div>
     </header>
@@ -69,4 +87,7 @@
 {% endif %}
     <!-- Current page: {{ page.url | url }} -->
   </body>
+  <!-- No need for JS so far might need later 
+  <script src="/js/main.js"> </script>
+  -->
 </html>
