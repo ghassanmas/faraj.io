@@ -5,8 +5,10 @@ export default {
 // Todo: still need to do apprioate 404 page as default index.njk still serfved for all other urls
 // Todo: automate the change to this file so that will be deployed `faraj-homepage-lang` worker in cloudfalre
 // Todo: double check if this works well in other browsers or "Accept-Header" doesn't exist
+ // Works correctly with curl https://faraj.io  -L -H "Accept-Language: ar"
 // Todo: Relate to previous long term SEO strategy
 // Todo: how much latecny does this worker add to response?
+  // Google AI response search said 8milliesecond (so okay)
     try{
     const isArabic = request.headers.get('Accept-Language').startsWith('ar');
     const destinationURL = isArabic ? "https://faraj.io/ar/" : "https://faraj.io/en/";
