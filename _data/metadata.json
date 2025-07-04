@@ -1,53 +1,62 @@
 {
-    "title": "The Faraj Initiative",
-    "url": "https://faraj.io/",
-    "language": "en",
-    "gitRepo":"https://github.com/ghassanmas/faraj.io",
-    "description": "The Faraj Initiative is an initiative to provide resources and guidance for secure communication.",
-    "img": "https://faraj.io/img/default1.png",
-    "feed": {
-        "subtitle": "The Faraj Initiative is an initiative to provide resources and guidance for secure communication.",
-        "filename": "feed.xml",
-        "path": "/feed/feed.xml",
-        "id": "https://faraj.io/"
-    },
-    "jsonfeed": {
-        "path": "/feed/feed.json",
-        "url": "https://faraj.io/feed/feed.json"
-    },
-    "author": {
-        "name": "Ghassan Maslamani",
-        "email": "ghassan.maslamani@gmail.com",
-        "url": "https://faraj.io/"
-    },
-    "lang": "en",
-    "mainSections":[
-        {
-            "name":"pillars",
-            "title":"The pillars",
-            "desc": "The main pillars of the Faraj initiative",
-            "icon":"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-shield-check-icon lucide-shield-check\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"/><path d=\"m9 12 2 2 4-4\"/></svg>"
-        },
-        {
-            "name":"about_overview",
-            "title":"About the initiative",
-            "desc": "An overview of the initiative, and why",
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-question-mark-icon lucide-circle-question-mark\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"/><path d=\"M12 17h.01\"/></svg>"
-        },
-        {
-        "name":"guides",
-        "title": "Guides",
-        "desc": "List of guides, each has the goal to do a certain task",
-        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-wrench-icon lucide-wrench\"><path d=\"M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z\"/></svg>"
+  "title": "The Faraj Initiative",
+  "url": "https://faraj.io/",
+  "language": "en",
+  "gitRepo": "https://github.com/ghassanmas/faraj.io",
+  "description": "The Faraj Initiative is an initiative to provide resources and guidance for secure communication.",
+  "img": "https://faraj.io/img/default1.png",
+  "feed": {
+    "subtitle": "The Faraj Initiative is an initiative to provide resources and guidance for secure communication.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://faraj.io/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://faraj.io/feed/feed.json"
+  },
+  "author": {
+    "name": "Ghassan Maslamani",
+    "email": "ghassan.maslamani@gmail.com",
+    "url": "https://faraj.io/"
+  },
+  "lang": "en",
+  "mainSections": [
+    {
+      "name": "pillars",
+      "title": "The pillars",
+      "desc": "The main pillars of the Faraj initiative",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-shield-check-icon lucide-shield-check\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"/><path d=\"m9 12 2 2 4-4\"/></svg>"
     },
     {
-        "name": "glossary",
-        "title": "Glossary",
-        "desc": "List of important terms used in the initiative",
-        "icon":"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-book-text-icon lucide-book-text\"><path d=\"M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20\"/><path d=\"M8 11h8\"/><path d=\"M8 7h6\"/></svg>"
+      "name": "about_overview",
+      "title": "About the initiative",
+      "desc": "An overview of the initiative, and why",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-question-mark-icon lucide-circle-question-mark\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"/><path d=\"M12 17h.01\"/></svg>"
+    },
+    {
+      "name": "guides",
+      "title": "Guides",
+      "desc": "List of guides, each has the goal to do a certain task",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-wrench-icon lucide-wrench\"><path d=\"M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z\"/></svg>"
+    },
+    {
+      "name": "glossary",
+      "title": "Glossary",
+      "desc": "List of important terms used in the initiative",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-book-text-icon lucide-book-text\"><path d=\"M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20\"/><path d=\"M8 11h8\"/><path d=\"M8 7h6\"/></svg>"
     }
-    
-    ],
-    "switchTheme": "Toggle Theme"
-    
+  ],
+  "guides":
+  [
+    {
+        "name": "prepare_offline_device",
+        "title": "Prepare a device to be offline (Air Gapped)",
+        "description":"A detailed guide to prepare a device (computer or smartphone) to be offline, air gapped,  for encrypt/decrypt "
+    },
+    {
+        "name":"prepare_key_"
+    }
+  ],
+  "switchTheme": "Toggle Theme"
 }

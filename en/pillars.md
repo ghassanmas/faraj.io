@@ -1,5 +1,5 @@
 ---
-title: Facts regarding communicating when a device is compromised
+title: The pillars of secure communication when a device is comproised
 description: an explanation of the limitation cryptography and end to end encryption
 tags:
   - Politics

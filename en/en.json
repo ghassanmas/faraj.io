@@ -1,5 +1,8 @@
 {
     "titleBase": "The Faraj Initiative",
     "lang": "en",
-    "date":"git Created"
+    "date":"git Created",
+    "layout":"layouts/post.njk",
+    "permalink": "{{ page.filePathStem | underscoreToHypen }}.html"
+
 }

@@ -2,5 +2,7 @@
  "lang": "ar",
  "titleBase":" مبادرة الفَرَج",
  "date":"git Created",
-"title": "مبادرة الفَرَج"
+ "title": "مبادرة الفَرَج",
+ "layout":"layouts/post.njk",
+"permalink": "{{ page.filePathStem | underscoreToHypen }}.html"
 }
