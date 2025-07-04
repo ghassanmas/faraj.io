@@ -42,9 +42,13 @@ eleventyConfig.addFilter("isArabic", function(path){
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
     });
 
+    eleventyConfig.addFilter('underscoreToHypen', function(path){
+        return path.replaceAll("_","-")
+    })
+
     eleventyConfig.addAsyncFilter('getFileLastMoified',  async function(path){
           const  lastMod = await  DateGitLastUpdated(path);
-     return lastMod;
+          return (lastMod? lastMod : new Date());
 
         /*const stats  = fs.statSync(path);
              return new Date(stats.mtime)

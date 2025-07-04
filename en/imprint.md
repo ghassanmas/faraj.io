@@ -1,6 +1,7 @@
 ---
 title: Legal and Imprint
 description: Legal info, limitation and liability
+layout: layouts/post.njk
 ---
 The author(s) of this content as time of writing is:
 

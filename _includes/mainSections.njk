@@ -1,7 +1,7 @@
 <div class="sections">
 {% for section in sections %}
 <div class="section">
-<a href="{{ section.name}}">
+<a href="{{ section.name | underscoreToHypen }}">
 <h3> {{ section.title }}   </h3>
 {{ section.icon | safe }} 
 <p>{{ section.desc }}</p>
