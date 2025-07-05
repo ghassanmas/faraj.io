@@ -3,6 +3,5 @@
  "titleBase":" مبادرة الفَرَج",
  "date":"git Created",
  "title": "مبادرة الفَرَج",
- "layout":"layouts/post.njk",
-"permalink": "{{ page.filePathStem | underscoreToHypen }}/"
+ "layout":"layouts/post.njk"
 }

@@ -2,7 +2,6 @@
     "titleBase": "The Faraj Initiative",
     "lang": "en",
     "date":"git Created",
-    "layout":"layouts/post.njk",
-    "permalink": "{{ page.filePathStem | underscoreToHypen }}/"
+    "layout":"layouts/post.njk"
 
 }
