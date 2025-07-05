@@ -3,6 +3,6 @@
     "lang": "en",
     "date":"git Created",
     "layout":"layouts/post.njk",
-    "permalink": "{{ page.filePathStem | underscoreToHypen }}.html"
+    "permalink": "{{ page.filePathStem | underscoreToHypen }}/"
 
 }
