@@ -1,8 +1,10 @@
 # Faraj.io
 
-This the source code and the content of https://ghassan.blog site. 
 
-It uses [Eleventy](https://github.com/11ty/eleventy), and particularly bootsrapped from [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog/)
+This is still under develoment. 
+
+This repo orginaly forked from [ghassan.blog](https://github.com/ghassanmas/ghassanblog). It also where [started from there](https://github.com/ghassanmas/ghassan.blog/commit/6db8ed4eb0a4a846aef3d2399ecea6b78154a90f), and then [transfered to a dedicated repo](https://github.com/ghassanmas/ghassan.blog/commit/b0d2ff706b75363674b3c07972fdc7bd16c61ad9).
+
 
 ## development
 
@@ -16,4 +18,4 @@ ref: [Node 22 Doc](https://nodejs.org/en/blog/announcements/v22-release-announce
 
 All code of this project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-All content of this project is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/), **except content inside `faraj`** folder which is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+All content of project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
