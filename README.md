@@ -1,7 +1,7 @@
 # Faraj.io
 
 
-This is still under develoment. 
+This is still under deveploment, you can [track progress Github through it's proejct](https://github.com/users/ghassanmas/projects/3)
 
 This repo orginaly forked from [ghassan.blog](https://github.com/ghassanmas/ghassanblog). It also where [started from there](https://github.com/ghassanmas/ghassan.blog/commit/6db8ed4eb0a4a846aef3d2399ecea6b78154a90f), and then [transfered to a dedicated repo](https://github.com/ghassanmas/ghassan.blog/commit/b0d2ff706b75363674b3c07972fdc7bd16c61ad9).
 
