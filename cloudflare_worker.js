@@ -1,6 +1,10 @@
 export default {
   async fetch(request) {
 // shall run for www.faraj.io
+  // Now this worker handle both www and root and redirct accordingly doubled checked with below
+  // curl https://www.faraj.io -L -I
+  // Resolved by just assinging the same woreker to the www.faraj.io route
+
 // After 100K requests (irrelavnt for now) cloudflare will not redirect;
 // Todo: still need to do apprioate 404 page as default index.njk still serfved for all other urls
 // Todo: automate the change to this file so that will be deployed `faraj-homepage-lang` worker in cloudfalre
