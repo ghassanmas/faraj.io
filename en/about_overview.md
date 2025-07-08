@@ -20,3 +20,18 @@ On the other hand, the easier it is to do, the more venruablae it is. Thus might
 
 
 
+
+Playtype:
+
+- state on state 
+- state sponsered companies on people 
+- people on people 
+
+### Actors
+
+**Entity types**: e.g. aramature, state sposnered, companies..etc, companies dedicated for that 
+**Motive**: Money, influence, power, espoige, public order, allgedgy national secutiry
+**How/Method**:
+- Utizling miss usage, user unablity 
+- In depth research utizling unknown venrablity (case of corps) OR back door 
+
