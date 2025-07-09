@@ -28,7 +28,7 @@ In this section, I outlines some facts and best practices in (cypersecurity, and
 
 Putting cypersecurity aside...Here we are just considering the **worst case scenario**, and this is not a new concept, it's an axiom in risk management, engineering, and many other fields.
 
-Back to cypersecuirty, there is a model or archtecture called **Zero Trust**, where you assume that your network/device is already compromised, and you build your security around this assumption. 
+Back to cyper-secuirty, there is a model or architecture called **Zero Trust**, where you assume that your network/device[^4] is already compromised, and you build your security around this assumption. 
 
 ### Fact 2 (E2EE limitation)
 
@@ -274,5 +274,6 @@ The don'ts:
 [^1]: List of _publicly known_ private companies which their whole business is to build software to spy people: [https://xorl.wordpress.com](https://xorl.wordpress.com/offensive-security-private-companies-inventory/).
 [^2]: https://stackoverflow.com/questions/316068/what-is-the-ideal-font-for-ocr
 [^3]: https://github.com/ggerganov/ggwave
+[^4]: Zero Trust Architecture NIST Special publication 800-207 section 2.2.1 page 8 [pdf version](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf)  
 
 - https://blog.cryptographyengineering.com/2024/08/25/telegram-is-not-really-an-encrypted-messaging-app/

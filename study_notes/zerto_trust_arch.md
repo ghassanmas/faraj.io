@@ -5,7 +5,7 @@ Which is understandable, given wi-fi connneciton, adoption of internet (WAN), ip
 
 ### Notes
 - Also one noticable  pattern of arch, is that everything is treated as **a resource**, which remind me of how AWS, treats everything as a resource, as unsuprisingly the whole document by NIS is aimed to be used as a implmentation ref for civilain uncalssifed enteripsie (which is what AWS is).   
-- In ZTA, even in private network, (VPN in today's cloud?), a device is not trusted, it will always assume by default it's attacked (this probably where the ref in pillars is not accurate), _it assume an attacker is masqudaring a device not that a device is comprised?_ [^1]
+- In ZTA, even in private network, (VPN in today's cloud?), a device is not trusted, it will always assume by default it's an attacker (this probably where the ref in pillars is not accurate), _it assume an attacker is masqudaring a device not that a device is comprised?_ [^1]
 	- Ref 2.2.1 page 8 of res A
 
 And a response to that is "Authtincation & Authorizaiion", session baseed...etc. Which seems to be related to what is typically used in WEB? 
