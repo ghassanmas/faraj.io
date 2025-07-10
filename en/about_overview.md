@@ -19,6 +19,8 @@ On the other hand, the easier it is to do, the more venruablae it is. Thus might
 
  > For cryptographic  to be inseucre (as an algrothim), then all of mathmatician have failed us as as general public.  
  
+>  People are the weakest link in Information Security[^3]
+ 
 ## How 
 
 
@@ -46,13 +48,16 @@ Structure
 - The goal (The why)
    - Explain the actors, thier motives, thier target
    - All the stack holders 
-- Thier Methods of which (some are legal or illegal)
-  - Hgih usage base 
-  - Follow digital print and other data left when using servoces
-     - Cooperation between setate and other coprs (e.g state with ISP)
-     - Corps are obligated to provide access when asked (they have to respect local reulgation)
-  - Abuse vulnerabilities  (zero day )
-- Their Motive (depends on the actor, companies: money, state: control or shape public opinion )
+	- Thier Methods of which (some are legal or illegal)
+	  - Hgih usage base 
+	  - Follow digital print and other data left when using servoces
+	     - Cooperation between setate and other coprs (e.g state with ISP)
+	     - Corps are obligated to provide access when asked (they have to respect local reulgation)
+	  - Abuse vulnerabilities  (zero day )
+	- Their Motive (depends on the actor, companies: money, state: control or shape public opinion )
+- Why I should trust this 
+- Talk about the weakest element of the chain (social/human aspects)
+  - As secure as the party contacting to (Faraj  2 suppose to make this agnostic) 
 
 ### Why I should trust this 
 
@@ -78,3 +83,4 @@ Lastly, again even if math is not broken, software might be and usually is, that
 
 [^1]: [The case of Shireen and Khahoggi](https://ghassan.blog/posts/shireen-abu-akleh-and-jamal-khashoggi/) 
 [^2]: For example can you need to proof  that is possible to have an algrothim that would quickly find factors of a very large prime number.   [other resources on ChatGPT chat](https://chatgpt.com/share/686fa6f0-7f18-8004-99b9-77f4b06714b9)
+[^3]: A quote by Bruce Schneier
