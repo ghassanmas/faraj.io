@@ -20,4 +20,6 @@ The author(s) of this content as time of writing is:
  - Design and glossary fucntionility is infucled from allaboutberlin.com site by Nicolas
  - The Icons by/from lucide.dev
 
+
+
 [^1]: Stateless on paper, as most countries and UN don't recognize Palestine yet, secondly even if they do, the [question of East-Jerusalem](https://www.un.org/unispal/document/auto-insert-203463/) need to be answered as well.      

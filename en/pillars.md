@@ -9,9 +9,11 @@ layout: layouts/post.njk
 
 > This work on  progress, check back later... You can [track the progess there though](https://github.com/users/ghassanmas/projects/3)
 
+> Important note: the software used to generate key pairs might not even trust worthy, given to be sure a 100% number is prime it will take long time, thus algorthim might the calucalte it relies in probability.  
+
 > Important note: this gudie might be releavnt to secure data tranmission between parties, but it doesn't or is irreleavnt for **anonymity**. In ohter wordes it will help you about the "What" of what you sent not the "To whom?" you send it.
 
-In this digital age, communicating has became so simple, easy, and almost free. However this comes with another cost, **our privacy**, and even [**survival**](/posts/shireen-abu-akleh-and-jamal-khashoggi/) for some.
+In this digital age, communicating has became so simple, easy, and almost free. However this comes with another cost, **our privacy**, and even [**survival**](https://ghassan.blog/posts/shireen-abu-akleh-and-jamal-khashoggi/) for some.
 
 This might not be a matter or a concern for most poeple. However if you are journalists, activist then it could mean your freedom, or even your life.
 
