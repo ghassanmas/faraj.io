@@ -23,19 +23,25 @@ Note: technically it might not be a public, because the shared token cannot be k
 ### RSA 
 
 
-## Other
+## Expirmenting
+
+#### checking for RSA prime numbers
 
 To check if a number is really prime, an algorthim has O(n) of at least (2**1024). If we choose to not to rely in probablity, then we might not choose a prime number, e.g. instead of trusting the number is really prime, we are trusting whatever claim is it that the number if prime. 
 
+#### Steps to check
+
+- Generate key pair, and check if their prime is really prime 
+	- It should be checked for at least N (what is value for N so it's trust worthy?)
+	
+
+#### checking eliptic curve 
+
+- 
 
 
-to be researched by trusted resources 
 
-hahah fuck it.... 
 
-if you read this FUCK you any way it's going to be published to the Public
-
-if by coincidenceis alright
 
 The goal to check the integrity of the offline tool to generate key pair. 
 
