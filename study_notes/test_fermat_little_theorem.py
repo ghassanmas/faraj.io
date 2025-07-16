@@ -55,5 +55,52 @@ def how_long_to_take(p=2**1024):
         f"the time to really check if {p} is really prime, took {diff_time} seconds")
 
 
+def how_long_to_take_no_write(p=2**1024):
+    import time
+    time_now = time.time()
+    print(f"time now is {time_now}, start to check for {p}")
+    number_to_check = int(p / 2)
+    for i in range(2, number_to_check):
+        if ((p % i) != 0):
+            continue  # nothing, noneed to write to memorey
+    diff_time = time.time() - time_now
+    print(
+        f"the time to really check if {p} is really prime, took {diff_time} seconds")
+
+
+"""
 for j in [7, 22, 444, 5555, 66666, 2**1024]:
     how_long_to_take(j)
+"""
+# Let's calculate 7 digits
+# with no momrey write
+how_long_to_take_no_write(1000000)
+
+
+# Let's calculate 8 digits
+# with no momrey write
+how_long_to_take_no_write(10000000)
+
+
+# Let's calculate 9 digits
+# with no momrey write
+how_long_to_take_no_write(100000000)
+
+
+# Let's calculate 10 digits
+# with no momrey write
+how_long_to_take_no_write(1000000000)
+
+
+# Let's calculate 11 digits
+# with no momrey write
+how_long_to_take_no_write(10000000000)
+
+
+# dump check, let see how long it take in time as number digits
+# increase, 1, 2, 3, 4 digit
+# Let's calucalte from 1 to 100 digits
+for i in range(1, 100):
+    p_check = int('1' + ('0' * i))
+    print(f"running for {p_check} digits")
+    how_long_to_take(p_check)

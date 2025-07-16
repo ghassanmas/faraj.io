@@ -35,6 +35,17 @@ To check if a number is really prime, an algorthim has O(n) of at least (2**1024
 	- It should be checked for at least N (what is value for N so it's trust worthy?)
 	
 
+Time to check relate to number of digit running python3.12 on Mac apple silicon 2019
+
+
+| digit # | time (seconds)       |
+| ------- | -------------------- |
+| 8       | 0.42(max) 0.25(min)  |
+| 9       | 4.03(max) 2.5(min)   |
+| 10      | 38.22(max) 26.1(min) |
+| 11      | ~400()????           |
+|         |                      |
+
 #### checking eliptic curve 
 
 - 
