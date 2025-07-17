@@ -98,6 +98,9 @@ how_long_to_take_no_write(10000000000)
 
 
 # dump check, let see how long it take in time as number digits
+# yes it's dump as expectred, it suppose to be sqrt(p)
+# secondaly, we can optimize by checking factorinzing 
+# of the prime numbers (1...n-1), where n is sqrt(p) 
 # increase, 1, 2, 3, 4 digit
 # Let's calucalte from 1 to 100 digits
 for i in range(1, 100):
