@@ -5,7 +5,16 @@ This is still under deveploment, you can [track progress Github through it's pro
 
 This repo orginaly forked from [ghassan.blog](https://github.com/ghassanmas/ghassan.blog). It also where [started from there](https://github.com/ghassanmas/ghassan.blog/commit/6db8ed4eb0a4a846aef3d2399ecea6b78154a90f), and then [transfered to a dedicated repo](https://github.com/ghassanmas/ghassan.blog/commit/b0d2ff706b75363674b3c07972fdc7bd16c61ad9).
 
+## Access:
 
+You can browse the content in three places and the content and code in two places:
+
+- Gitlab https://gitlab.com/ghassanmas/faraj-io
+    - Ycombinator, open source related
+- Github https://github.com/ghassanmas/faraj.io
+   - Microsoft affliated
+- https://faraj.io (_Content only_)
+   - Hosted on Cloudflare, a company that has lots of IT infrastrcure, and doesn't seem to make profit so far???
 ## development
 
 This config `.elevnty.js` relies on exprimental feature of Node 22, of which CommonJS can load module.
