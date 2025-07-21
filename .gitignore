@@ -12,3 +12,5 @@ img/gpg-public-key.png
 css/index_2.css
 _includes/layouts/base_backup.njk
 .obsidian/
+.venv
+study_notes/__pycache__
