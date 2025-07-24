@@ -93,7 +93,7 @@ draw_for_x(x=9)
 
 def plot_for_x_wrapper(x=2):
     print("\033[94m print for P(x,y,n) where X={x}, y and n are 0 to 9")
-    draw_for_x(prime_only=False)
+    draw_for_x(x, prime_only=False)
     print(f"\033[94m print for P(x,y,n) where x={x},y 0 to 9 and, and n 0 to 9 filtred by prime only")
     draw_for_x(x, y=10,s=10,prime_only=True)
     print(f"\033[94m print for P(x,y,n) where x={x},y 0 to 19 and, and n 0 to 9 filtred by prime only")
