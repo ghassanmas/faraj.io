@@ -1,3 +1,4 @@
+import sys
 
 from is_prime import is_prime_dump
 
@@ -76,16 +77,6 @@ def draw_for_x(x=2, y=10, s=10, prime_only=True):
 
 
 
-print("\033[94m print for P(x,y,n) where X=2, y and n are 0 to 9")
-draw_for_x(prime_only=False)
-print("\033[94m print for P(x,y,n) where x=2,y 0 to 9 and, and n 0 to 9 filtred by prime only")
-draw_for_x(x=2,y=10,s=10,prime_only=True)
-print("\033[94m print for P(x,y,n) where x=2,y 0 to 19 and, and n 0 to 9 filtred by prime only")
-draw_for_x(x=2,y=20,s=10,prime_only=True)
-print("\033[94m print for P(x,y,n) where x=2,y 0 to 19 and, and n 0 to 19 filtred by prime only")
-draw_for_x(x=2,y=20,s=20,prime_only=True)
-print("\033[94m print for P(x,y,n) where x=2,y 0 to 19 and, and n 0 to 19")
-draw_for_x(x=2,y=20,s=20,prime_only=False)
 
 
 link_break_str=''
@@ -99,3 +90,45 @@ draw_for_x(x=7)
 print("------------------------------break------------------------------")
 draw_for_x(x=9)
 """
+
+def plot_for_x_wrapper(x=2):
+    print("\033[94m print for P(x,y,n) where X={x}, y and n are 0 to 9")
+    draw_for_x(prime_only=False)
+    print(f"\033[94m print for P(x,y,n) where x={x},y 0 to 9 and, and n 0 to 9 filtred by prime only")
+    draw_for_x(x, y=10,s=10,prime_only=True)
+    print(f"\033[94m print for P(x,y,n) where x={x},y 0 to 19 and, and n 0 to 9 filtred by prime only")
+    draw_for_x(x, y=20,s=10,prime_only=True)
+    print(f"\033[94m print for P(x,y,n) where x={x},y 0 to 19 and, and n 0 to 19 filtred by prime only")
+    draw_for_x(x, y=20,s=20,prime_only=True)
+    print(f"\033[94m print for P(x,y,n) where x={x},y 0 to 19 and, and n 0 to 19")
+    draw_for_x(x, y=20,s=20,prime_only=False)
+
+
+def set_default_args(args):
+    """
+    take list of argv of length 0 to ?
+    set the default of each value if not set
+    x argv[0]: deafutl 2 
+    
+    """
+    # First we shift since first arg is filename
+    # and should be neglected
+    args = args[1:]
+
+    if len(args) == 0:
+        args.append(2)
+    else:
+        # Should check correct type
+        try:
+            args[0] = int(args[0])
+        except ValueError as e:
+            print("oops not correct type of X cascading to 2")
+            args[0] = 2 
+    return args
+
+
+if __name__ == '__main__':
+    args = set_default_args(sys.argv)
+    # If caller set value we used it, otherwise cascade to 2.
+    x = args[0]
+    plot_for_x_wrapper(x)
