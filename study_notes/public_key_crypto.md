@@ -38,13 +38,13 @@ To check if a number is really prime, an algorthim has O(n) of at least (2**1024
 Time to check relate to number of digit running python3.12 on Mac apple silicon 2019
 
 
-| digit # | time (seconds)       |
-| ------- | -------------------- |
-| 8       | 0.42(max) 0.25(min)  |
-| 9       | 4.03(max) 2.5(min)   |
-| 10      | 38.22(max) 26.1(min) |
-| 11      | ~400()????           |
-|         |                      |
+| digit # | time (seconds) Python 3  | time seconds Python 2 |
+| ------- | ------------------------ |-----------------------|
+| 8       | 0.42(max) 0.25(min)      | 0.44
+| 9       | 4.03(max) 2.5(min)       | 4.55
+| 10      | 38.22(max) 26.1(min)     | 68.10
+| 11      | ~400()????               | 
+|         |                          |
 
 #### checking eliptic curve 
 
