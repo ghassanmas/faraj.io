@@ -2,6 +2,9 @@ import fs from "fs";
 
 import { DateTime } from "luxon";
 
+import markdownit from 'markdown-it'
+import footnotePlugin from 'markdown-it-footnote';
+
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import  DateGitLastUpdated  from "./node_modules/@11ty/eleventy/src/Util/DateGitLastUpdated.js"
@@ -12,6 +15,17 @@ export default async function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("js");
 
+    //Markdown related config
+    // Ref markdwon doc: https://markdown-it.github.io/markdown-it/ 
+    // Ref 11ty doc: https://www.11ty.dev/docs/languages/markdown/#default-options
+
+    const markdownItOptions = {html: true, breaks: true, linkify: true};
+    const markdownItLib = markdownit(markdownItOptions)
+                          .use(footnotePlugin);
+
+	eleventyConfig.setLibrary("md", markdownItLib);
+ 
+    // End of Markdown config
 
     //Plugin addition/configuration
         eleventyConfig.addPlugin(eleventyNavigationPlugin);
