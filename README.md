@@ -13,9 +13,10 @@ You can browse the content in three places and the content and code in two place
     - Ycombinator, open source related
 - Github https://github.com/ghassanmas/faraj.io
    - Microsoft affliated
-- ~~https://faraj.io (_Content only_)~~ (In procress of changing host) ~~please don't access from https://faraj.io until further notice:~~ 
-   - ~~Hosted on Cloudflare, a company that has lots of IT infrastrcure, and doesn't seem to make profit so far???~~
-   - Currently redirects to https://Gitlab.com/ghassanmas/faraj-io [projects-issue are on Github](https://github.com/users/ghassanmas/projects/3) 
+- Currenlty hosting is unstable (is handled by any big corps)
+
+
+For progress related [projects-issue are on Github](https://github.com/users/ghassanmas/projects/3) 
 
 ## development
 
