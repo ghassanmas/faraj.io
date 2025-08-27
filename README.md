@@ -13,7 +13,8 @@ You can browse the content in three places and the content and code in two place
     - Ycombinator, open source related
 - Github https://github.com/ghassanmas/faraj.io
    - Microsoft affliated
-- Currenlty hosting is unstable (is handled by any big corps)
+- https://faraj.io
+ - Hosted on vpsag.com (provide a cheap option  [3.57 Euro/Month](./invoice_vps-ag.pdf) )
 
 
 For progress related [projects-issue are on Github](https://github.com/users/ghassanmas/projects/3) 
