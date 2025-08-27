@@ -9,12 +9,14 @@ This repo orginaly forked from [ghassan.blog](https://github.com/ghassanmas/ghas
 
 You can browse the content in three places and the content and code in two places:
 
+- Codeberg https://codeberg.org/ghassanmas/faraj.io 
+    -  an e.V/non-profit affliated with forgejo (another non-profit) both are advocates for FOSS (Free[^2] and open source)[^1]
 - Gitlab https://gitlab.com/ghassanmas/faraj-io
-    - Ycombinator, open source related
+    - Ycombinator, open source[^1] related
 - Github https://github.com/ghassanmas/faraj.io
-   - Microsoft affliated
+    - Microsoft affliated
 - https://faraj.io
- - Hosted on vpsag.com (provide a cheap option  [3.57 Euro/Month](./invoice_vps-ag.pdf) )
+    - Hosted on vpsag.com (provide a cheap option  [3.57 Euro/Month](./invoice_vps-ag.pdf) )
 
 
 For progress related [projects-issue are on Github](https://github.com/users/ghassanmas/projects/3) 
@@ -32,3 +34,7 @@ ref: [Node 22 Doc](https://nodejs.org/en/blog/announcements/v22-release-announce
 All code of this project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 All content of project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+[^1]: Please note 'open source' and 'FOSS' have a complicated relation, _not necessarily every open source is FOSS_. It depends on license, and who you ask... Also by FOSS, FOSS (the software foundation) or the term free/libre and open source?.
+
+[^2]: Free as from libre, which might or might not be free from price.
