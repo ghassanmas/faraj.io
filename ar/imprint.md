@@ -1,11 +1,11 @@
 ---
 title: المسئولية القانونية
-description: hum
+description: معلومات قاتونية
 ---
 شارك في تاليف المحتوى المنشور:
 
 - غسان مسلماني (فلسطيني مقيم في برلين [^1] ) 
-	- تواصل عبر (ghassan.maslamani@gmail.com)
+	- تواصل عبر (ghassan@faraj.io)
 
 ### القيود والمساءلة القانونية 
  1. محتوى متوفر تحت رخصة المشاع الابداعي (creative Commons) من نوع نَسْبُ الـمُصنَّف، غير تجاري، الترخيص بالمثل 4.0 دولي [مرجع](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ar)

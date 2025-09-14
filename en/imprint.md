@@ -6,7 +6,7 @@ layout: layouts/post.njk
 The author(s) of this content as time of writing is:
 
 - Ghassan Maslamani (A Palestinian statless person[^1]) 
-	- Contact via email (ghassan.maslamani@gmail.com)
+	- Contact via email (ghassan@faraj.io)
 ### Limitation and liability 
 1. The content is licensed under `Create Common Attribution-NonCommercial-ShareAlike 4.0 International` unless otherwise noted
 2. The author(s) of this content doesn't guarantee the correctness of the content provided, and thus provide no liability whatsoever. 
