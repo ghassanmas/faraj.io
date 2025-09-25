@@ -44,11 +44,18 @@ A^B = How many time of the 81, we get a sequence where it  {black, red
 , black, red}, is 1= or 1/81 = 1/9 * 1/9 thus A and B are indepent.
 
 Though when B occured, by neccesaity one of the 9 cases of _9/81 occured, 
-but it's same ratio as 1/9_ e.g  `8 / 72 = 1 / 9 = 9 /82`  
+but it's same ratio as 1/9_ e.g  `(8 / 72) = (1 / 9) = (9 /81)`  
 
 Which sums it up as okay, we got one case of the A's but still we are left
-left with same ratio of A complement. 
-                        
+left with same ratio. i.e the ( |A| / |Ω|)  is constant before and after
+B occured. 
+
+Note, in real life situation, it could be not that relastic if when |A|,
+or |B| are in > 10^100000, magntinude. So that B would occure without any 
+noise of which would affect A, or might even be exculsive of it!.  
+
+A and B would be still in theory indepenet, but how useful is that property
+in real life, it depends on the cirumisatance of the expirmenet.                         
 ______________________
 Revisist defintion below, as A|B or A^B, if A are independent or are 
 not. if A^B = 0 always are indepenent. Hence in Crypto book [^3]p11, we have 
