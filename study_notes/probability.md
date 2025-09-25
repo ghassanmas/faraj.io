@@ -6,6 +6,50 @@ an outcome space.
 
 TODO:
 ---------
+
+On last note on indepeance. If we have three sets A, B, and C
+
+As an axiom **A^B cannot be 0**, or in other world if both share no events
+in common, then by definition, if A occured, there is higher priority event
+B occuars OR it could be that **A and B are exclusive of each other**, which 
+by common sense conflict with *knowing A doesn't reveal anything about B*, 
+
+Another important point, is that, for A, B to be independt, it's by necessaity
+knowing B, reveal nothing about A **OR** _reveal as much info relative to what
+we don't know_ as we started.
+
+Assuming event B depends on sequence of small events, while approaching B,
+P(A), might have fluctuated, nonetheless, it setlled to same P(A) we started 
+with as soon as B occured. AND it should to. 
+
+Q: Followiong example on paper, get with expirmenet where |A^B| > 1 given 
+the paper example was 1, and we know it cannot be 0. 
+
+Paper example: 
+
+Assuming we have box of balls of three colors are with equal distrubtion.
+red, black, and yellow:
+
+Expirment: we take 4 balls in sequence (i=1,2,3,4) For 3^4 times or 81
+
+ **Assuming equal distribution of the 81**
+
+Sets/Events are:  
+
+ A { ball is red when i is even}    9/81 =  1/9
+ B { ball is black when i is odd}   9/81 =  1/9 
+ C { ball is green when i is even}  9/81 =  1/9
+
+A^B = How many time of the 81, we get a sequence where it  {black, red
+, black, red}, is 1= or 1/81 = 1/9 * 1/9 thus A and B are indepent.
+
+Though when B occured, by neccesaity one of the 9 cases of _9/81 occured, 
+but it's same ratio as 1/9_ e.g  `8 / 72 = 1 / 9 = 9 /82`  
+
+Which sums it up as okay, we got one case of the A's but still we are left
+left with same ratio of A complement. 
+                        
+______________________
 Revisist defintion below, as A|B or A^B, if A are independent or are 
 not. if A^B = 0 always are indepenent. Hence in Crypto book [^3]p11, we have 
        
@@ -20,9 +64,10 @@ not. if A^B = 0 always are indepenent. Hence in Crypto book [^3]p11, we have
        if     A^B =/= 0,   -----     (Non-Indepednt)
                              B
 **Intersection**
-
+ 
        if   A|B = A,             (Independent)
-                         A.B
+                             A.B   (in case A, B are disjoint partition of omega, and A|B =A
+                                    and be is B is 1, thus A|B = A^B = A
  A^B                =            --      --
                          |Ω|-   |A |  v  B| ??????????????? (Need revision)
       if   A|B =/= A,   ----------------------    (non-Indepenedt)
@@ -98,8 +143,14 @@ with less balls).
 
 
 So how about if, we say after the first ball, before we get the second, 
-we return the first to the box again.
+we return the first to the box again. 
 
+Assuming the first one was black
+
+P(A|B) = 1/10 + 1/10 + 1/10 + 1/10 + 1/10 = 1/2 = P(A)
+P(B|B) = P(B) (we still have 5 black balls)
+ A^B = A.B (But note here P(B) alredy occured at this stage, so it's 1!)
+    thus A^B = P(A) . 1  = P(A)
 ---------
 END of Todo.
 
