@@ -51,39 +51,55 @@ left with same ratio. i.e the ( |A| / |Ω|)  is constant before and after
 B occured. 
 
 Note, in real life situation, it could be not that relastic if when |A|,
-or |B| are in > 10^100000, magntinude. So that B would occure without any 
-noise of which would affect A, or might even be exculsive of it!.  
+or |B| are in > 10^100000, magntinude. So _that B would occure without any 
+noise of which would affect A_*, or might even be exculsive of it!.  
 
 A and B would be still in theory indepenet, but how useful is that property
 in real life, it depends on the cirumisatance of the expirmenet.                         
+
+* Following in the book through the definition of **conditional indepence**p33-
+p35, Given A and B are indepedent, this might not hold true if event C occured
+and vise versa, in other words, if C is the noise, event A and B might no longer
+be indepednet after C, or  if A and B are not indepedent, given C, A and B could
+then be indepedent. See **Conditional Indepeance** below
+
+
 ______________________
 Revisist defintion below, as A|B or A^B, if A are independent or are 
 not. if A^B = 0 always are indepenent. Hence in Crypto book [^3]p11, we have 
        
   `Pr[m = m|c = c] = Pr[m = m].`  
 
-**Conditionatlily**:        
-        
-
-       if      A^B = 0?,     A*       (Independent)
+**Independance**:        
+       
+          A,        if   A^B = AB       (Independent)
  A|B =
-                            A^B       
-       if     A^B =/= 0,   -----     (Non-Indepednt)
-                             B
+         A^B       
+        -----,      if  A^B =/= AB     (Non-Indepednt)
+          B
+
 **Intersection**
- 
-       if   A|B = A,             (Independent)
-                             A.B   (in case A, B are disjoint partition of omega, and A|B =A
-                                    and be is B is 1, thus A|B = A^B = A
- A^B                =            --      --
-                         |Ω|-   |A |  v  B| ??????????????? (Need revision)
-      if   A|B =/= A,   ----------------------    (non-Indepenedt)
-                                |Ω|
- ?it could be 0 from set theory presepective but not necessary indepedent 
+
+                
+           AB*,                if A|B = A (Independent)
+   
+ A^B =            -     -
+          |Ω| - (|A| v |B|) , if A|B =/= A (Non-Indepedent)   
+          -----------------
+                |Ω|            
+            |A|     |A^B|     |B|      |B^A|
+*meaning: ------- = ----- OR ----- =  -------
+            |Ω|    ||B|     ||Ω|     |A|    
 
  *This the a key distiguish between **Set Theory** and **Probability Theory**,
 while the former _the world of sets_ as **static**, in the later things are in 
-motion, or **dynamic**, in other wors if a box balls, {A: 5 are red}, {B: are black},  
+motion, or **dynamic**, or in set theory, we are concerned about counting the events
+while in probability, we are concerned about the ratio of them. 
+
+
+
+Example:
+if we have a box balls, {A: 5 are red}, {B: are black},  
 
 
 A: 5 red, B 5 black
@@ -220,6 +236,106 @@ is that when doing expirmenets in space Ω, if it's important to note thesequen
 of the outcomes. Then the sequences is translated to path. 
 
 In other words, counting path with length n larger than > is the space of A.
+
+
+**Conditional Indepeance**
+
+Recall the definition above, two events A and B are independent
+if P(A|B) = A, A^B = AB 
+
+But what if we have another event called C, of which it might affect how A and B
+are related if it occured.
+
+P(A^B|C) = P(A|C) P(B|C) Then A,B are indepenet @ C 
+  which is *irrelevant* to P(A|B) = B 
+
+In other words, we could have a situation where once event C occuars, then the 
+chance of A and B occuaring are equally likely but not necessarly if we have
+event B occured, that A has same probablilty that we had in the begging.
+
+
+An example: C is has no effect on A,B
+
+Lets say we have space of numbers {i=1, i=20},
+
+A = {i any odd numbers}
+B = {i odd numbers, i>10}
+C = {i, i>10, i<=20}
+
+- Relation between A and B: 
+
+P(A) = 10/20 = 1/2, 
+P(B) = 5/20 = 1/4
+A^B = 5/20 =1/4 but =/=  AB (Non Indepent)
+
+
+- A and B with C 
+
+Let's assume event C occured, meaning our space is now i>10,i<=20 
+
+P(A|C) =  5/10 = 1/2 
+ 
+P(B|C) = 5/10 = 1/2
+
+P(A^B|C) = 5/10 =/= P(A|C)P(B|C) Thus still @ C, A and B and not independent
+note that _B is is subset of A_
+
+An example 2:  A and B are stil indendepent
+
+A = {i, i%2==0}
+B = {i, i%3==0}
+C = {i, i%6==0} 
+P(A) = 10/20 = 1/2 
+P(B) = 6/20 = 3/10
+A^B = 3 / 20 = AB (Thus A, and B are indepent)
+
+How about @ C
+A|C = 3/3 = 1 
+B|C = 3/3 = 1 
+P(A^B|C) = A|C * B|C (still independent?) 1*1 @ C we are certian A&B will occuar
+note: _C is a subset of both A and B_
+
+
+An example 3: A and B not indepent @ C
+A {i, i%2==0}
+B {i, i%3==0}
+C {i, i%5==0}
+
+A,B are independent (recall example 2 above)
+
+However, @ C 
+A|C = 2 / 4 = 1/2
+B|C = 1 / 4  
+P(A^B|C) = 0 =/= there can be no number between 1 and 20, that 
+is divisable by 5, 3, and 2. 
+In other words @ C A^B = 0, B and A became disjoint list @ C, which by 
+definition cannot be true if A and B to be indepednet.  
+
+_________________________________
+
+For A and B to be indepedent:
+
+- A must not be disjoint list of B 
+- A and B cannot be a subset of each other?
+
+
+Revisit _defination above after book also notes below_
+
+ 
+ Which is irrelavnt to A and B indepeance in isolation to it.
+  
+ Note: if A is a subset of B, then no matter what is C, A and B 
+ cannot be indepdent.     
+ By defintion, if A is a subset of B are subset of each other:
+
+ P(A|B) = 1 =/= AB
+ P(B) > P(A) 
+ P(A) < P(B) < 1 
+ Thus P(A|B)  = 1 =/= 
+ 
+@ C
+ if C events didn't affect memeber of B thus A 
+ P(A|C) < P(B|C) 
 
 
 -------------------------------
