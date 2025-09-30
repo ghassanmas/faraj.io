@@ -41,13 +41,25 @@ C,M
 
 Notes:
 - One time pad, is Ps because we don't use the key again. **AND**
-  length of the key `k` is at least equal or greater than `m`  
+  length of the key `k` is at least equal or greater than max length 
+  `m` of the M space ~. Then `m xor k` will result c.   
+  - But from practial point of view, we cannot send more messages than
+  the maximum lenght of a message? since then k is not uniformely distrbuited?
+   or k is resued again and also by necssiatity, we duplicate in `M`,
+  thus elements of K, M, C are not uniformaly distrubuted 
+  
+- 
 - For variable length time pad, it wouldn't work because the `c` length would 
   leak info about the length of the `m`.  
+   - other way to put it, we would have some K that leads to a spesfic m, we don't
+   need to guess total length of k. 
 - practicaly aim for high Pc, and is perfect secureity isn't practical
 - Change the key as frequent as could be (typically not starightforward or not in 
  hand of the end user) Adv
 - Don't send same messge over and over again as it would minizie the unifromaity of space M
+- It always assumed M and C are in spaces, probably for the easinesss of evacguons
+- For whatever cipher is it, message max length shall has a relation with the frequency 
+ of key rotation, and frequecy of key rotation if defined by `two weeks`...
 
 ## Ciphers
 ### 3.1 One-Time pad
