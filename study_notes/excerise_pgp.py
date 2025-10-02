@@ -103,3 +103,49 @@ Hints:
  - "e" is the most occured letter
  - we 
 """
+
+Consider the issue in issue/38.md
+
+
+Create a cipher text that is padded with random
+characters and in bween a setentce. 
+
+Look at algorhtim used shall be known when heddump the 
+message, we would be concerned on symetric encrypted 
+packet of which its key supposely encrypted with public 
+key. 
+
+if the symetric encrypted message taken into algorthim
+with a message that only _has " "as times as length of 
+message_. 
+
+Were it possible to detect where in the message the " "
+was? (E.g. when it was really " ", the end result at that
+index, would equal to the cipher, since m xor m is 0 
+which equal "0" so then xor with c again. would result
+where in (the message and padding) we had " "
+
+Before starting:
+
+ - Refresh with ASCII base64 representation (assume ASCI, but it could be UTF-8) 
+ - Refresh with RFC9580 packet syntax 
+ - create frequent message with same text, "hello" might not be a practial example
+ - Ensure syemtric packet message is readable in hex"
+ - Before trying with real example, assume we konw the full message, rerun the encryptioin
+ with same message, on cipher, if its padded just move it around. 
+   - run the result on cipher itself, we should get something simlair to the orignal message
+   - note there could be extra tunning parameters encrypted within public packet, then loop
+   over would require repeating over them, if algorthim takes extra parameter than just m or c, 
+  and k. 
+
+
+Note: The cipher might be random when it's key is random, but it xor with might
+not be. 
+
+if then we take all 
+
+if Yes contine...
+if no,  
+
+
+xor: might be any type of cipher
