@@ -16,8 +16,7 @@ You can browse the content in three places and the content and code in two place
 - Github https://github.com/ghassanmas/faraj.io
     - Microsoft affliated
 - https://faraj.io
-    - Hosted on vpsag.com (provide a cheap option  [3.57 Euro/Month](./invoice_vps-ag.pdf) )
-
+    - Hosted on vpsag.com (provide a cheap option  [3.57 Euro/Month](./invoice_vps-ag.pdf) )[^3]
 
 For progress related [projects-issue are on Github](https://github.com/users/ghassanmas/projects/3) 
 
@@ -38,3 +37,5 @@ All content of project is licensed under the [Creative Commons Attribution-NonCo
 [^1]: Please note 'open source' and 'FOSS' have a complicated relation, _not necessarily every open source is FOSS_. It depends on license, and who you ask... Also by FOSS, FOSS (the software foundation) or the term free/libre and open source?.
 
 [^2]: Free as from libre, which might or might not be free from price.
+
+[^3]: For it and other; saving past work, family, and Arbeitsagentur (from 06-25 to >= commit that added this line)
