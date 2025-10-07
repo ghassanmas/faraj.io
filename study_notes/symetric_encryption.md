@@ -20,7 +20,7 @@ i _just assume it's secure so the rest point make sense_?
 
 ii: 
  if we iterate over all messages, then the probability that a given
- cipher belongs a key `k` of K, is constant among all memebers of m. 
+ cipher belongs to a key `k` of K, is constant among all memebers of m. 
 
  For that to be true, the number of `k` that map to a spesfic c, is 
  same among all memebers of m. (in case of one time pad, its one
@@ -99,7 +99,7 @@ Q1: relate to ii[i], if M is larger than
   2: memebers of K aren't uniformely distrubted
 
   A1A: we sent too many messages
-  In case the cipher is one time pad, then we 
+  In case the cipher is ~~one time pad~~*, then we 
   are certian that one of the M is duplicate.
   because we assume K is uniformely distrubted
   thus, IT MUST BE that one of message is being
@@ -113,12 +113,14 @@ Q1: relate to ii[i], if M is larger than
   so then given ii, Nc of the duplicate m would 
   be 2 while for the other is 1. 
 
- *And even worse, because human created langauges
+
+**nd even worse, because human created langauges
  don't distrube characters unifomrely among the
  set of characters or alphates, in a setnance.
  for example consider the pair of k,m (written in ASCII)
  m: hoiaer aertiopj aserpojs  (No way this English sentance)
  k: kllinalkenrlkanwralkjnwrl (has same probabiilty as other k)
+
 
  A1B: Case of K aren't unfiformely distrubted).
  When memebrs of K, aren't uniformarluy distrubted
@@ -128,9 +130,10 @@ Q1: relate to ii[i], if M is larger than
  distribution, meaning we will end with duplciate c
  which would also break Nc of equation ii.
 
- From practical prespesctive though, if we are using
+ **From practical prespesctive though, if we are using
  one time pad, a key is being reused then it's no longer
- one time pad. 
+ one time pad, probably better name is a shannon cipher 
+ where one of the cirumistance is that |M| > |K|  
 
  --Trivia Q1---
  Another way to intrupet being not uniformely distrubted
@@ -218,6 +221,29 @@ Notes:
 - It always assumed M and C are in spaces, probably for the easinesss of evacguons
 - For whatever cipher is it, message max length shall has a relation with the frequency 
  of key rotation, and frequecy of key rotation if defined by `two weeks`...
+
+
+## Semntic Security
+
+ Recall earlier, it has been laid out, that only one time pad is prefectly secure.
+ And since it's non practical to have key as long as message, cryptoanalysts came with
+ another defintion caled **Semntic Secuirty**, where they *toloreate the requirements of 
+ perfect security such that, they said instead of having same constant proability among 
+ M,K given c, which is 1/|Nc|, we allow a room for error called *epislon*, and the value
+ of which epislon is accepted or i.e. a ciper is  **Semantic Secure**, when adversay within
+ certiah amount of time (how long?) and certian compoutaional resourecs (how much?), wouldn't 
+ still be able to recover m. 
+
+ It's probably better to cascade the situatoin to Alice and Bob; before they  decide to communicate 
+ messages on each other, they need to know is okay per say if Eve given she have access 10 computing 
+ machine with X cores and Y time say 1 year for example...
+
+ Well may be Alice and Bob would say; hummm by 1 year it would be already too late if Eve knew about it
+ and we are certian they she doesn't have more that computal power....
+ 
+ This assuming the only variable are computation power and time... but still there is proabbility Eve
+ has access to an efficent algorthim...? thus the gap between computaotin/time better to be as wide
+ as possible form what Alice and Bob set as limit. 
 
 ## Ciphers
 ### 3.1 One-Time pad
