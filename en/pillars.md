@@ -9,6 +9,8 @@ layout: layouts/post.njk
 
 > This work on  progress, check back later... You can [track the progess there though](https://github.com/users/ghassanmas/projects/3)
 
+> Important note: please note that the duration of time where the message is relevant (the short the better), the size of the message (not too long), and computatoin of the entity of which to know the content of the message, lastly please change the key paris as frequent as you can.
+
 > Important note: the software used to generate key pairs might not even trust worthy, given to be sure a 100% number is prime it will take long time, thus algorthim might the calucalte it relies in probability.  
 
 > Important note: this gudie might be releavnt to secure data tranmission between parties, but it doesn't or is irreleavnt for **anonymity**. In ohter wordes it will help you about the "What" of what you sent not the "To whom?" you send it.
