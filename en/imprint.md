@@ -22,4 +22,4 @@ The author(s) of this content as time of writing is:
 
 
 
-[^1]: Stateless on paper, as most countries and UN don't recognize Palestine yet, secondly even if they do, the [question of East-Jerusalem](https://www.un.org/unispal/document/auto-insert-203463/) need to be answered as well.      
+[^1]: Stateless on paper, as most countries and UN don't recognize Palestine yet, secondly even if they do, the [question of Jerusalem](https://www.un.org/unispal/document/auto-insert-203463/) need to be answered as well.
