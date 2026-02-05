@@ -38,4 +38,4 @@ All content of project is licensed under the [Creative Commons Attribution-NonCo
 
 [^2]: Free as from libre, which might or might not be free from price.
 
-[^3]: For it and other; saving past work, family, and Arbeitsagentur (from 06-25 to >= commit that added this line)
+[^3]: Funding for that and the project as a whole has been: (from June-2025 to Sept-2025): savings from past work and family, (from Sept-2025 to Jan-2026): mainly Agentur für Arbeit, (from: Feb-2026: to>= time of last commit or now): savings from last period so far, and please keep watching closely...
