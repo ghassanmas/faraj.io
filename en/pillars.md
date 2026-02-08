@@ -9,7 +9,7 @@ layout: layouts/post.njk
 
 > This work on  progress, check back later... You can [track the progess there though](https://github.com/users/ghassanmas/projects/3)
 
-> Important note: please note that the duration of time where the message is relevant (the short the better), the size of the message (not too long), and computatoin of the entity of which to know the content of the message, lastly please change the key paris as frequent as you can.
+> Important note: please note: 1) that the duration of time where the message is relevant (the short the better)[^5], 2)the size of the message (shorter better or not too long), 3) key size longer better,  4) the  computation  power/resources of the entity of which wants to know content of the message, lastly 5) please change the key pairs as frequently.
 
 > Important note: the software used to generate key pairs might not even trust worthy, given to be sure a 100% number is prime it will take long time, thus algorthim might the calucalte it relies in probability.  
 
@@ -19,7 +19,7 @@ In this digital age, communicating has became so simple, easy, and almost free. 
 
 This might not be a matter or a concern for most poeple. However if you are journalists, activist then it could mean your freedom, or even your life.
 
-This article is diveded in two sections, the first section outlines some basic facts in cypersecuirty and cryptography. While the second section is focused on a practial and hands on how-tos guide, to communicate securely. However please note, while I've put a countless number of hours in researching, and studying this topic, I am not cypersecuirty or cryptography expert. So please take this guide with a grain of salt. And if you find any mistake, or have any suggestion, [please reach out](mailto:ghassan.maslamani@gmail.com). 
+This article is diveded in two sections, the first section outlines some basic facts in cypersecuirty and cryptography. While the second section is focused on a practial and hands on how-tos guide, to communicate securely. However please note, while I've put a countless number of hours in researching, and studying this topic, I am not cypersecuirty or cryptography expert. So please take this guide with a grain of salt. And if you find any mistake, or have any suggestion, [please reach out](mailto:ghassan@faraj.io). 
 
 
 ## Section 1: Facts and Best Practices
@@ -273,11 +273,14 @@ The don'ts:
 
 ### Online to offline guide
 
-## Refs
+## Refs/ Footnotes
 
 [^1]: List of _publicly known_ private companies which their whole business is to build software to spy people: [https://xorl.wordpress.com](https://xorl.wordpress.com/offensive-security-private-companies-inventory/).
 [^2]: https://stackoverflow.com/questions/316068/what-is-the-ideal-font-for-ocr
 [^3]: https://github.com/ggerganov/ggwave
 [^4]: Zero Trust Architecture NIST Special publication 800-207 section 2.2.1 page 8 [pdf version](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf)  
+[^5]: For example don't send a message about what you will do next year, rather tomorrow
+[^6]: A very long message might be easily breakable than a shorter message, since that would weakness key length, I am trying to better understand **in case OpenPGP**  follow [issue 38](issues/38.md) 
+[^7]: I am trying to generally understand the ratio or the relation of these requirements **1 to 5**, [through the 40th issue/task](issues/40_that_function.md). 
 
 - https://blog.cryptographyengineering.com/2024/08/25/telegram-is-not-really-an-encrypted-messaging-app/
