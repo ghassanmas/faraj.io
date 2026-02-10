@@ -280,7 +280,7 @@ The don'ts:
 [^3]: https://github.com/ggerganov/ggwave
 [^4]: Zero Trust Architecture NIST Special publication 800-207 section 2.2.1 page 8 [pdf version](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf)  
 [^5]: For example don't send a message about what you will do next year, rather tomorrow
-[^6]: A very long message might be easily breakable than a shorter message, since that would weakness key length, I am trying to better understand **in case OpenPGP**  follow [issue 38](issues/38.md) 
-[^7]: I am trying to generally understand the ratio or the relation of these requirements **1 to 5**, [through the 40th issue/task](issues/40_that_function.md). 
+[^6]: A very long message might be easily breakable than a shorter message, since that would weakness key length, I am trying to better understand **in case OpenPGP**  follow [issue 38](/issues/38/index.html) 
+[^7]: I am trying to generally understand the ratio or the relation of these requirements **1 to 5**, [through the 40th issue/task](/issues/40/index.html). 
 
 - https://blog.cryptographyengineering.com/2024/08/25/telegram-is-not-really-an-encrypted-messaging-app/
