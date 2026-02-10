@@ -9,7 +9,7 @@ layout: layouts/post.njk
 
 > This work on  progress, check back later... You can [track the progess there though](https://github.com/users/ghassanmas/projects/3)
 
-> Important note: please note: 1) that the duration of time where the message is relevant (the short the better)[^5], 2)the size of the message (shorter better or not too long), 3) key size longer better,  4) the  computation  power/resources of the entity of which wants to know content of the message, lastly 5) please change the key pairs as frequently.
+> Important note: please note: 1) that the duration of time where the message is relevant (the short the better)[^5], 2)the size of the message (shorter better or not too long)[^6], 3) key size longer better,  4) the  computation  power/resources of the entity of which wants to know content of the message, lastly 5) please change the key pairs as frequently as possible.[^7]
 
 > Important note: the software used to generate key pairs might not even trust worthy, given to be sure a 100% number is prime it will take long time, thus algorthim might the calucalte it relies in probability.  
 
