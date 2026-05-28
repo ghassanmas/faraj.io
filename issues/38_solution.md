@@ -15,7 +15,7 @@ on authricated encryption (by default), which uses block cipher and steam cipher
 hash function. and then the result of hash functoin used as padding for block cipher (assuming it's on CCM mode). 
 
 The below is revision of OpenPGP packet syntax, along with suggested next steps, in order complete main goal of 
-issues/38, that is how secure is OpenPGP as a fuction of (message_length, public algrothim, symetric algothim).
+issues/38, that is how secure is OpenPGP as a fuction of (message_length, public algrothim, symetric algothim, message lifeftime, evasder resources).
 
 - The public algorthim depends on recipent public key, and might not be in hand with sender
 - message length and symetric algorthim are in hand of the sender
@@ -271,14 +271,15 @@ point 1,2 and 3 can be done in parrallel, 1,2 requires course/book while 3 requi
 1. Create key pair of RSA and eliptic curve
 2. Look at the metadata of each key, what does an openpgp key metadata included (hence it would be used for next step 4)
 3. Prepare messages, one small and other multi lines  (ensure the latter length > k length of of previous step)
-4. For each of them or both, create message that is encrypted with different syemtric key algorthims
-5. For each of them or both, create message that is not compressed, and other is compressed
+4. For each of them or both(keys?), create message that is encrypted with different syemtric key algorthims
+5. For each of them or both(keys?), create message that is not compressed, and other is compressed
+?: For step 1 the keys are for sender/receiver? what about different combination of receiver/sender?
 
 ### Public key pucket RSA and EC
 
  1. Create a pair of RSA key pairs
  2. Go over RFC 9580 Step by step for when ecrypting a message for one recipient
- 3. Decrypt the key session message _PSKET packet_ not through `gpg` but through low level manual function
+ 3. Decrypt the key session message _PKESK packet_ not through `gpg` but through low level manual function
     1. We suppose to have as input private key from
     2. Other metadata passed through the packet.
     3. AS RFC 9580 refers RFC to 8017 mainly section 7.2.1 and 7.2.2 for ecryption, decryption respectively.
@@ -313,7 +314,28 @@ key.
 
 ## Next next steps
 
+__To do: revisit this and issues/38.md, so that it consider attacks on public key/message
+Note Eve, which probably would cascade to integer factorizaition problem.__
+
  1. Try to crack the code as suggested in issues/38.md
+   - There are two ways to approach an open pgp message,
+      A: Attacking the symetric encrypted packet
+      B: Attacking the public signed packet (which reveal key for symetric)
  2. IF not, what kind of resources in theory is required, 
    1. Also how does that affect condition defined in previous steps 
       (e.g. message length, public/symetric algorhtim)
+   2. What is easier for Bob to attack the public packet or symetric packet (Where does Aragon2 stands here?)
+    if symetric packet is easier then it's not relevant? or it depends on the length of the message?
+    
+
+- Revisit This with Aargon2 in mind, given Aragon2 is used or is part open pgp For/When (1 protecting key through passpharse _not so immportant for this_ and 2 __ MAYBE?   a- secret is hidden behind assymetric message b- once unencrypted (through assymetric key) a text will show up c- this text goes into Aragon2[RFC9106] blah blah outputs => key for the symetric message (Where the real and possible long* message is) )
+
+*Beacuse we assume asymetric key, is not so good if the messge is long. 
+
+
+Note 20.1.26: 
+- We added Aragon2 to the equation
+- Looking back into notes, it seems that the conculsiton sa far was to go back to study encryption mainly block cipher.
+
+Todo: 
+- Revisit Opengpg standard, block ciphers through whatever resources and Aragon2 RFC9106
